@@ -1,5 +1,3 @@
-using Base.Iterators: partition
-
 function select_reduce(bank::String, n::Int)
     selection = bank[1:end-n]
     values = [parse(Int, char) for char in selection]
